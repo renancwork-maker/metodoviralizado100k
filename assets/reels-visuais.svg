@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title description">
+<title id="title">Painel criativo de vídeos para redes sociais</title><desc id="description">Cartões ilustrativos de vídeos nos temas games, curiosidades e humor, com gráfico crescente. Sem dados reais de desempenho.</desc>
+<defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#2b163b"/><stop offset="1" stop-color="#0b0a16"/></linearGradient>
+  <linearGradient id="a" x1="0" x2=".8" y2="1"><stop stop-color="#8225cf"/><stop offset=".8" stop-color="#160d2c"/></linearGradient>
+  <linearGradient id="b" x1=".2" x2="1" y2="1"><stop stop-color="#e94b9c"/><stop offset="1" stop-color="#4c2259"/></linearGradient>
+  <linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3338ab"/><stop offset="1" stop-color="#a63d88"/></linearGradient>
+  <linearGradient id="chart" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#ff88d2"/><stop offset="1" stop-color="#bffcde"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="14" stdDeviation="22" flood-color="#000" flood-opacity=".5"/></filter>
+  <radialGradient id="glow"><stop stop-color="#b340ba" stop-opacity=".6"/><stop offset="1" stop-color="#78247d" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="800" height="560" rx="30" fill="url(#bg)"/>
+<circle cx="400" cy="180" r="320" fill="url(#glow)"/>
+<g opacity=".3" stroke="#a175a8" fill="none"><path d="M0 120H800M0 240H800M0 360H800M0 480H800"/><path d="M120 0V560M260 0V560M400 0V560M540 0V560M680 0V560"/></g>
+<g filter="url(#shadow)">
+<g transform="translate(60 87) rotate(-8 102 186)"><rect x="0" y="0" width="202" height="365" rx="22" fill="url(#a)" stroke="#f0b4ff" stroke-opacity=".5"/><rect x="15" y="18" width="172" height="300" rx="15" fill="#160e2c"/><circle cx="102" cy="156" r="72" fill="#973def" opacity=".3"/><g stroke="#e6d6fe" stroke-width="6" fill="none" stroke-linecap="round"><rect x="60" y="132" width="84" height="50" rx="22"/><path d="M80 157h23m-11-11v22m35-12h.2m14 8h.2"/></g><text x="101" y="278" font-family="sans-serif" fill="#fff" font-size="24" text-anchor="middle" font-weight="800">GAMES</text><text x="101" y="337" font-family="sans-serif" fill="#ebbcff" font-size="12" text-anchor="middle" letter-spacing="3">REEL AUTORAL</text></g>
+<g transform="translate(295 59)"><rect x="0" y="0" width="215" height="397" rx="22" fill="url(#b)" stroke="#ffb9dd" stroke-opacity=".6"/><rect x="14" y="18" width="187" height="328" rx="16" fill="#2c1538"/><circle cx="108" cy="159" r="78" fill="#ff9bd8" opacity=".14"/><g fill="none" stroke="#fff4fb" stroke-linecap="round" stroke-width="6"><circle cx="105" cy="141" r="53"/><path d="M87 189v25m36-25v25m-64-25l-25 26m143-26l25 26"/><path d="M88 132c8 5 16 5 24 0m21-2l5 8m-43 22c11 15 25 15 35 0"/></g><text x="108" y="302" text-anchor="middle" font-size="23" font-weight="800" fill="#fff" font-family="sans-serif">HUMOR</text><text x="108" y="368" text-anchor="middle" font-size="12" letter-spacing="3" fill="#ffd1e7" font-family="sans-serif">IDEIA + EDIÇÃO</text></g>
+<g transform="translate(540 86) rotate(7 102 186)"><rect x="0" y="0" width="202" height="365" rx="22" fill="url(#c)" stroke="#9fc9ff" stroke-opacity=".5"/><rect x="14" y="18" width="174" height="300" rx="16" fill="#171b3e"/><circle cx="101" cy="148" r="78" fill="#b36bff" opacity=".15"/><g stroke="#d7efff" fill="none" stroke-width="7" stroke-linecap="round"><path d="M73 156c-26-29-4-66 28-67 41-1 53 40 28 68l-13 14v23H87v-23z"/><path d="M89 207h26m-21 13h16"/><path d="M101 50v19m-55 71H29m153 0h-18m-36-73l15-16M60 69l-15-16"/></g><text x="101" y="278" text-anchor="middle" font-size="21" fill="#fff" font-weight="800" font-family="sans-serif">CURIOSIDADES</text><text x="101" y="337" text-anchor="middle" font-size="12" letter-spacing="2" fill="#cddaff" font-family="sans-serif">CONTEÚDO ÚTIL</text></g>
+</g>
+<rect x="223" y="436" width="344" height="79" rx="17" fill="#0f0a1d" fill-opacity=".94" stroke="#d26fc8" stroke-opacity=".65"/>
+<text x="244" y="458" fill="#e8b1e0" font-size="12" font-family="sans-serif" font-weight="700" letter-spacing="2">PROCESSO DE CRESCIMENTO</text>
+<path d="M248 490l48-13 46 4 48-25 38 9 48-31 44-15" stroke="url(#chart)" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M508 419l17-3-8 18" fill="none" stroke="#c5ffdf" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

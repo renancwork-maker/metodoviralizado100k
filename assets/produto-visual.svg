@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 708 560" role="img" aria-labelledby="title description">
+<title id="title">Método Dark 100K, e-book de 30 páginas e planejamento de conteúdo</title><desc id="description">Ilustração da capa do guia e de uma tela conceitual de organização de Reels, sem estatísticas inventadas.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#32152e"/><stop offset=".55" stop-color="#110b21"/><stop offset="1" stop-color="#280d26"/></linearGradient><linearGradient id="front" x1="0" x2="1"><stop stop-color="#281332"/><stop offset="1" stop-color="#090917"/></linearGradient><linearGradient id="pink" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ff9ed1"/><stop offset=".5" stop-color="#f249a4"/><stop offset="1" stop-color="#af6af8"/></linearGradient><filter id="sh"><feDropShadow dx="7" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".7"/></filter><radialGradient id="halo"><stop stop-color="#9c2c8d" stop-opacity=".65"/><stop offset="1" stop-color="#9c2c8d" stop-opacity="0"/></radialGradient></defs>
+<rect width="708" height="560" fill="url(#bg)"/>
+<circle cx="340" cy="250" r="270" fill="url(#halo)"/>
+<g opacity=".3" fill="none" stroke="#774c82"><circle cx="335" cy="253" r="186"/><circle cx="335" cy="253" r="236"/></g>
+<g filter="url(#sh)">
+<path d="M88 112l40-27 247 26-38 26z" fill="#6d3370"/><path d="M88 112l38-27v358l-38 27z" fill="#130b1a" stroke="#714477"/><path d="M126 85h249v358H126z" fill="url(#front)" stroke="#a44d98" stroke-width="2"/>
+<path d="M145 106h210v6H145z" fill="url(#pink)"/>
+<text x="151" y="146" font-size="19" letter-spacing="4" font-family="sans-serif" font-weight="800" fill="#ff9bcb">GAEL DARK</text>
+<text x="151" y="215" font-size="50" letter-spacing="-2" font-family="sans-serif" font-weight="900" fill="#fff">MÉTODO</text>
+<text x="151" y="265" font-size="53" letter-spacing="-2" font-family="sans-serif" font-weight="900" fill="url(#pink)">100K</text>
+<path d="M154 309c19-42 55-47 80-35 23 10 36-7 54-33 16-23 39-34 54-35" fill="none" stroke="#fc7cbf" stroke-width="7" stroke-linecap="round"/><path d="M326 205l17-1-5 18" fill="none" stroke="#fc7cbf" stroke-width="6" stroke-linecap="round"/>
+<text x="153" y="358" font-size="16" font-family="sans-serif" font-weight="700" fill="#fff">PERFIS DARK</text>
+<text x="153" y="383" font-size="15" font-family="sans-serif" fill="#d8c2df">Estratégia e execução</text>
+<path d="M151 411h198" stroke="#8b598c"/>
+<text x="151" y="429" font-size="12" font-family="sans-serif" font-weight="800" letter-spacing="2" fill="#e8a8da">GUIA DIGITAL • 30 DIAS</text>
+<g transform="translate(402 76) rotate(7 113 212)"><rect x="0" y="0" width="226" height="420" rx="32" fill="#03040a" stroke="#5d5366" stroke-width="6"/><rect x="11" y="14" width="204" height="389" rx="25" fill="#111124"/><rect x="82" y="7" width="65" height="12" rx="6" fill="#020205"/><circle cx="39" cy="53" r="17" fill="url(#pink)"/><text x="67" y="57" font-size="14" font-weight="800" font-family="sans-serif" fill="#fff">@gaeldark</text><path d="M25 89h174" stroke="#5c445f"/><text x="25" y="121" font-size="15" font-family="sans-serif" font-weight="800" fill="#f6ebf6">ROTEIRO DE REELS</text><g transform="translate(25 145)"><rect x="0" y="0" width="55" height="86" rx="9" fill="#563072"/><rect x="62" y="0" width="55" height="86" rx="9" fill="#8c315e"/><rect x="124" y="0" width="55" height="86" rx="9" fill="#363888"/><path d="M21 30l18 14-18 14zM83 30l18 14-18 14zM145 30l18 14-18 14z" fill="#fff" opacity=".9"/></g><text x="25" y="265" font-size="13" font-family="sans-serif" fill="#baa9c9">Planejamento semanal</text><rect x="25" y="285" width="174" height="10" rx="5" fill="#42304d"/><rect x="25" y="285" width="92" height="10" rx="5" fill="url(#pink)"/><rect x="25" y="306" width="174" height="10" rx="5" fill="#42304d"/><rect x="25" y="306" width="136" height="10" rx="5" fill="url(#pink)"/><text x="27" y="360" font-size="12" font-family="sans-serif" fill="#f0c0df">✦  TESTAR • MEDIR • AJUSTAR</text></g>
+</g>
+<text x="348" y="538" text-anchor="middle" font-size="11" letter-spacing="2" font-family="sans-serif" fill="#b49bbb">IMAGEM ILUSTRATIVA • SEM DADOS REAIS DE PERFIL</text>
+</svg>
