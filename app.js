@@ -1,8 +1,7 @@
 /**
  * Método Dark 100K | @gaelfilantropo
- * Configurações reaproveitadas do quiz anterior. Revise antes de publicar.
- * ATENÇÃO: o link da Wiapy veio de uma oferta antiga; CONFIRME que agora
- * aponta para o produto digital correto e que cobra R$ 37.
+ * Site sem bibliotecas externas de análise ou pixels.
+ * Confira preço e forma de pagamento diretamente na Wiapy antes de publicar.
  */
 const CONFIG = Object.freeze({
   checkoutUrl: 'https://pay.wiapy.com/6ae2cfa06e359ce02d03051c',
@@ -81,11 +80,7 @@ const state = {index:0,answers:{},insightSeen:false,screen:'landing'};
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
 
-function track(eventName, params={}) {
-  try {
-    if (typeof window.gtag === 'function') window.gtag('event',eventName,{...params, page_type:'dark_quiz'});
-  } catch (e) { /* tracking must never block the quiz */ }
-}
+
 function saveState(){try{sessionStorage.setItem(memoryKey,JSON.stringify(state));}catch(e){/* storage optional */}}
 function restoreState(){
   try {
@@ -128,7 +123,6 @@ function renderQuestion(){
       state.answers[q.id]=option.value;
       $$('#question-options .answer-option').forEach(b=>b.disabled=true);
       button.classList.add('selected');
-      track('quiz_answered',{question_number:state.index+1,question_id:q.id,answer:option.value});
       saveState();
       setTimeout(()=>{
         if(state.index+1>=QUESTIONS.length){finishQuiz();return;}
@@ -151,7 +145,7 @@ function renderInsight(){
 }
 function startQuiz(){
   state.index=0;state.answers={};state.insightSeen=false;
-  track('quiz_started',{source:state.screen});renderQuestion();
+  renderQuestion();
 }
 function resetQuiz(){
   state.index=0;state.answers={};state.insightSeen=false;
@@ -164,7 +158,6 @@ function previousQuestion(){
 function finishQuiz(){
   $('#progress-fill').style.width='100%';
   showScreen('loading');
-  track('quiz_completed',{niche:state.answers.niche||'unset',goal:state.answers.goal||'unset'});
   const statuses=['Analisando seu ponto de partida','Definindo um ritmo de produção','Organizando suas próximas ações'];
   let step=0;const fill=$('#loading-progress');fill.style.width='0%';
   const timer=setInterval(()=>{step++;fill.style.width=`${Math.min(100,step*12)}%`;$('#loading-status').textContent=statuses[Math.min(2,Math.floor(step/3))];if(step>=9){clearInterval(timer);renderResult();}},170);
@@ -186,26 +179,12 @@ function renderResult(){
     ?'Você demonstrou disposição para seguir uma rotina de 30 dias. Veja a direção inicial e escolha se deseja o passo a passo completo.'
     :'Você tem um ponto de partida. Conheça um processo simples antes de decidir se faz sentido dedicar 30 dias à execução.';
   showScreen('result');
-  track('view_offer',{currency:'BRL',value:CONFIG.price,item_name:'Metodo Dark 100K'});
-}
-function checkoutHref(){
-  let checkout;
-  try {checkout=new URL(CONFIG.checkoutUrl);} catch(e){return '#oferta';}
-  const src=new URLSearchParams(location.search);
-  // Forward marketing attribution without stripping existing checkout parameters.
-  const pass=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','gbraid','wbraid','fbclid','ttclid','xcod','sck','src'];
-  for(const k of pass){const v=src.get(k);if(v)checkout.searchParams.set(k,v);}
-  return checkout.toString();
 }
 function initCheckout(){
+  // Link direto para a plataforma de pagamento: sem pixels, eventos ou parâmetros de rastreamento.
   $$('[data-checkout]').forEach(link=>{
-    link.setAttribute('href',checkoutHref());
-    link.setAttribute('rel','noopener noreferrer');
-    link.addEventListener('click',()=>{
-      track('begin_checkout',{currency:'BRL',value:CONFIG.price,item_name:'Metodo Dark 100K',origin:'quiz_result'});
-      try {sessionStorage.setItem('gael_checkout_clicked','1');} catch(e) {}
-      // No purchase / conversion event here: payment is confirmed by checkout.
-    });
+    link.setAttribute('href', CONFIG.checkoutUrl);
+    link.setAttribute('rel', 'noopener noreferrer');
   });
 }
 function init(){
@@ -216,8 +195,6 @@ function init(){
   $('#quiz-back').addEventListener('click',previousQuestion);
   $('#continue-insight').addEventListener('click',()=>{state.insightSeen=true;renderQuestion();});
   $('#brand-link').addEventListener('click',(ev)=>{ev.preventDefault();showScreen('landing');});
-  $('#result-to-offer').addEventListener('click',()=>track('offer_cta_click',{source:'result_header'}));
-  $$('[data-support]').forEach(link=>link.addEventListener('click',()=>track('contact_support',{source:state.screen})));
   initCheckout();
   if(state.screen==='quiz')renderQuestion();
   else if(state.screen==='insight')renderInsight();
